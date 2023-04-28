@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    min-width: 375px;
+    max-width: 500px;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    padding: 8% 3% 15% 3%;
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+    color: rgb(255, 255, 255);
+}
+
+.content h1 {
+    font-size: 4.07em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-right: 30%;
+}
+
+.content h2 {
+    margin-top: 5%;
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+    font-family: 'Outfit', sans-serif;
+}
+
+.content p {
+    margin-top: 2em;
+    font-size: 1.125em;
+    line-height: 1.5em;
+    font-family: 'Outfit', sans-serif;
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    top: 0;
+    width: 260px;
+    height: 72px;
+    background-color: rgb(21, 21, 21);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.button a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    font-size: 1.2em;
+    margin-left: 20%;
+}
+
+.button:after {
+    position: absolute;
+    text-align: center;
+    line-height: 5rem;
+    right: -56px;
+    content: url(../images/icon-arrow-left.svg);
+    width: 56px;
+    height: 72px;
+    background-color: rgb(213, 150, 108);
+}
+
+.button:hover {
+    background-color: rgb(213, 150, 108);
+}
+
+.button:hover::after {
+    background-color: rgb(21, 21, 21);
+}
+
+.resim {
+    max-width: 100%;
+    height: auto;
+  }
+
+.contacts{
+    margin: 10% 8%;
+}
+
+.contacts h3{
+    color: rgb(21, 21, 21);
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    cursor: pointer;
+}
+
+.contacts p{
+    margin-top: 10%;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+footer {
+    background-color: rgb(213, 150, 108);
+    color: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0;
+}
+
+.footer-logo {
+    margin-bottom: 3%;
+}
+
+.footer-logo img {
+    height: 3em;
+    width: 3em;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: 3%;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 0.8em;
+    margin-top: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        width: 50%;
+        margin-top: 5%;
+    }
+
+    .footer-copy {
+        margin-top: 5%;
+    }
+}
+@media screen and (min-width: 500px) {
+
+    body {
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    body {
+        min-width: 768px;
+        max-width: 930px;
+    }
+
+    .content {
+        display: inline-flex;
+        padding: 8% 5% 10% 5%;
+    }
+
+    .content h1 {
+        font-size: 5em;
+        padding-right: 12%;
+        cursor: default;
+    }
+
+    .contacts {
+        margin: 5% 6% 10% 6%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contacts p {
+        width: 40%;
+        margin: 0;
+    }
+
+    .icons {
+        margin: 0;
+        width: 15%;
+    }
+}
+.ferman {
+    color: rgb(255, 253, 253);
+    text-align: center;
+    bottom: 5;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 950px) and (max-width: 1200px) {
+
+    body {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        min-width: 1200px;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .button{
+        left: 10%;
+    }
+
+    .content {
+        display: inline-flex;
+        padding: 8% 10% 10% 10%;
+    }
+
+    .content h1 {
+        font-size: 6em;
+        padding-right: 25%;
+    }
+
+    .content h2 {
+        font-size: 3em;
+    }
+
+    .contacts{
+        margin: 5% 10% 5% 10%;
+    }
+
+}
